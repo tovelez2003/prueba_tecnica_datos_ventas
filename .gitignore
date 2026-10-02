@@ -1,0 +1,18 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Archivos generados por Python
+__pycache__/
+*.py[cod]
+
+# Logs y archivo de salida generado por el proyecto
+
+/resumen_ventas.xlsx
+/insumos/datos_ventas.xlsx
+
+# Variables de entorno y archivos locales del sistema
+.env
+.DS_Store
+Thumbs.db
