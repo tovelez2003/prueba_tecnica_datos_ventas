@@ -23,7 +23,7 @@ if __name__ == "__main__":
     
         # coompletar valor de columna Total_venta 
         df_ventas_empresas["Total_Venta"] = df_ventas_empresas["Total_Venta"].fillna(df_ventas_empresas["Cantidad"] * df_ventas_empresas["Precio_Unitario"])
-        df_ventas_empresas.to_excel("hola.xlsx", index = False)
+        
         # convertir en enteros 
         # df_ventas_empresas["Total_Venta"] = pd.to_numeric(df_ventas_empresas["Total_Venta"], errors="coerce")
         df_ventas_empresas["Total_Venta"] = [int(x) if pd.notna(x) else "" for x in df_ventas_empresas["Total_Venta"]]
